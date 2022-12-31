@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  letter-spacing: 2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Section Style */
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #FF7000;
+  font-family: 'Sevillana', cursive;
+}
+
+.nav-link {
+  color: #222222;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #fff;
+  border-radius: 0.5rem;
+  background-color: #285430;
+}
+
+.navbar-toggler {
+  border: 1px solid black;
+}
+
+
+/* Home Section Style */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(./images/food_02.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  padding: 2rem 5%;
+}
+
+.home .content {
+  max-width: 60rem;
+}
+
+.home .content h3 {
+  font-size: 5rem;
+  font-family: 'Lobster', cursive;
+  text-transform: uppercase;
+  color: #D4D925;
+}
+.home .content h4 {
+  font-size: 2.5rem;
+  color: #cb410b;
+}
+
+.home .content p {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+}
+
+/* Menu Section Styles */
+#menu {
+  padding: 5% 20%;
+  background: url("./images/background_03.jpg");
+}
+
+#special-menu {
+  padding: 5%;
+  background-color: #cb410b;
+  opacity: 0.7;
+}
+
+.special {
+  color: #fff;
+}
+
+.order-btn {
+  text-align: end;
+}
+
+
+.card:hover {
+  border: 2px solid #1A120B;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+}
+
+/* Testimonial Section Style */
+#testimoniol {
+  padding: 5% 20%;
+  position: relative;
+  background-color: #080808;
+  letter-spacing: 2px;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 0 15%;
+}
+
+#testimoniol .section_title {
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+#testimoniol p {
+  color: #fff;
+}
+
+.testimonial_text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #cb410b;
+}
+
+.testimonial_image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel_item {
+  padding: 7% 15%;
+}
+
+/* About Section Styles */
+#about {
+  padding: 10% 20%;
+  background: url("./images/background_04.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-image {
+  width: 75%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.about-images .two {
+  position: relative;
+  left: 50px;
+  bottom: 110px;
+}
+
+.about-details h3 {
+  /* color: #ffba00; */
+  color: #ff7e00;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.about-details h4 {
+  color: #3fff00;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.about-details p {
+  margin-top: 2rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+/* Footer Section Styles */
+#footer {
+  padding: 2% 20%;
+  background-color: #080808;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.footer-image {
+  width: 15%;
+  height: 15%;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  font-weight: bold;
+  /* border: 1px solid black; */
+  padding: 8% 20%;
+  border-radius: 2rem;
+}
+
+label, button {
+  margin-top: 2rem;
+}
+
+form h2, form p {
+  text-align: center;
+}
+
+.form-check-label {
+  margin-top: -1.5rem;
+  font-weight: lighter;
+}
+
+.register {
+  background: url("./images/background_05.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.signin {
+  background: url("./images/background_06.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Reservation Styles */
+.reservation {
+  background: url("./images/background_08.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+}
+
+/* .table-image img {
+  border-start-end-radius: 3rem;
+}
+.second-img {
+  position: relative;
+  left: 150px;
+  bottom: 150px;
+} */
+
+
+
+.table-form form {
+  padding: 3rem;
+  border: 2px solid white;
+}
+
+
+
+
+/* media queries for tablet */
+@media (max-width:991px) {
+  section {
+      padding: 2rem;
+  }
+  .home .content h3 {
+    font-size: 4rem;
+  }
+  .home .content p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    color: #fff;
+  }
+  #menu {
+    padding: 5% 10%;
+  }
+  .order-btn {
+    margin-bottom: 2px;
+  }
+  .special {
+    text-align: center;
+  }
+}
+
+/* media queries for mobile */
+@media (max-width:480px) {
+  .home {
+      background-position: center;
+      justify-content: center;
+      text-align: center;
+  }
+  .home .content h3 {
+      font-size: 2.5rem;
+  }
+  .home .content p {
+      font-size: 1rem;
+  }
+  .menu-item {
+    font-size: 0.8rem;
+  }
+  .card-details {
+    margin-top: 5px;
+  }
+  .first {
+    text-align: center;
+  }
+  .order-btn {
+    margin-bottom: 2px;
+  }
+}
